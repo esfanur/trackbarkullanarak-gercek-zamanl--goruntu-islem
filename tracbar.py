@@ -34,7 +34,7 @@ while True:
 
     altdeger=np.array([hmin,smin,vmin])
     ustdeger=np.array([hmax,smax,vmax])
-    canvas[:]=[h,s,v]
+    canvas[:]=[h,s,v] #burda  olusturarak hsvdeki yapılan rengı gorebılmek ıcın bir canvas olusuturduk
     mask=cv2.inRange(framehsv,altdeger,ustdeger) #burda ornegın sarı renk ayarladık sarı renk dısındakı yerlerı silicek 
     sonuc=cv2.bitwise_and(frame,frame,mask=mask)
 
