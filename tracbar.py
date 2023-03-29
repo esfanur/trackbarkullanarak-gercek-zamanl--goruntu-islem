@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 cam=cv2.VideoCapture(0)
-canvas=np.zeros((450,450,3),np.uint8)
+canvas=np.zeros((50,200,3),np.uint8) #girilen ilk deger yukseklık ıkıncı deger genıslık ucuncu renk
 cv2.namedWindow("kamera");
 
 def nothing(a):
